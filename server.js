@@ -57,6 +57,30 @@ app.post('/api/notes', (req, res) => {
   });
 });
 
+
+app.delete('/api/notes/:id', (req, res) => {
+  const noteId = req.params.id;
+
+  fs.readFile('./db/db.json', 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      res.status(500).json({ error: 'Error deleting note.' });
+    } else {
+      let notes = JSON.parse(data);
+      notes = notes.filter((note) => note.id !== noteId);
+
+      fs.writeFile('./db/db.json', JSON.stringify(notes), (err) => {
+        if (err) {
+          console.error(err);
+          res.status(500).json({ error: 'Error deleting note.' });
+        } else {
+          res.status(200).json({ message: 'Note deleted successfully.' });
+        }
+      });
+    }
+  });
+});
+
 // Helper function to generate a unique ID for each note
 function generateUniqueId() {
   return uuidv4();
