@@ -4,6 +4,10 @@
 
 ## Live Link: https://dry-stream-98350-9b906207c00f.herokuapp.com/notes
 
+![Screen Shot 2023-07-10 at 10 08 34 AM](https://github.com/deepsnow6/Notetaker-app/assets/130337959/29b48442-4822-4ebb-8f4c-33a03f03093b)
+
+![Screen Shot 2023-07-10 at 10 08 26 AM](https://github.com/deepsnow6/Notetaker-app/assets/130337959/4e35b625-ea08-4651-ac3c-588bb13fd7c3)
+
 ## Description
 Note Taker is a simple web application that allows users to create and manage notes. Users can add new notes, view existing notes, and delete unwanted notes. The application is built using HTML, CSS, and JavaScript, with a backend server implemented using Node.js and Express. It is deployed live with Heroku. 
 
