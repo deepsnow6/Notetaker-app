@@ -33,6 +33,8 @@ Not taking contributions at this time.
 
 ## Credits
 Source-code: The source code can be found on GitHub at https://github.com/coding-boot-camp/miniature-eureka
+Articles referenced for delete function: https://stackoverflow.com/questions/52089696/not-able-to-delete-data-using-app-delete-in-node-js
+https://www.tutorialspoint.com/express-js-app-delete-method
 
 ## License
 This project is licensed under the MIT license. See the LICENSE file for more information.
